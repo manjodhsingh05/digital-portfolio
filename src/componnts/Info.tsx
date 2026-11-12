@@ -48,7 +48,7 @@ const Info = () => {
                             <h4>Senior UI/UX Designer · Product Designer · Web Designer</h4>
                             <p>I turn complex business workflows into clear, intuitive digital experiences. With 8+ years in UI/UX and web design, I connect user needs, product goals, and frontend feasibility.</p>
                             <div className="action">
-                                <NavLink to='mailto:manjodhs11@gmail.com' className='btn'>See my work</NavLink>
+                                <NavLink to='https://www.behance.net/manjodhsingh' target="_blank" className='btn'>See my work</NavLink>
                                 <NavLink to='mailto:manjodhs11@gmail.com' className='btn'>Get in touch</NavLink>
                             </div>
                         </div>
