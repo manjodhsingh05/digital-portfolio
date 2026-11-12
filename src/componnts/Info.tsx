@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import user from "../assets/img/download.jpg";
+import user from "../assets/img/download.webp";
 import { useRef } from "react";
 import type { MouseEvent } from "react";
 const Info = () => {
