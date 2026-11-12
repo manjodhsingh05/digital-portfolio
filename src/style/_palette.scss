@@ -1,0 +1,72 @@
+// Shared colors keep the hero, content cards, and contact section consistent.
+:root {
+    color-scheme: light;
+    --on-primary: #ffffff;
+    --on-dark: #ffffff;
+    --contact-bg: #172e2b;
+    --contact-button-bg: #ffffff;
+    --contact-button-text: #172e2b;
+    --photo-border: #ffffff;
+    --page: #f8faf9;
+    --surface: #ffffff;
+    --surface-soft: #eef4f1;
+    --border: #d6e3dd;
+    --text: #172e2b;
+    --text-muted: #526761;
+    --primary: #11685b;
+    --primary-hover: #0b5147;
+    --primary-soft: #e0f0e9;
+    --accent: #87cdb5;
+    --status: #168461;
+    --on-dark-muted: #d0e5dd;
+    --header-bg: rgba(248, 250, 249, 0.96);
+    --hero-glow: rgba(135, 205, 181, 0.3);
+    --hero-glow-soft: rgba(221, 233, 222, 0.65);
+    --shadow-soft: rgba(23, 46, 43, 0.06);
+    --shadow-card: rgba(23, 46, 43, 0.14);
+    --shadow-art: rgba(17, 104, 91, 0.24);
+    --ring: rgba(17, 104, 91, 0.3);
+    --status-ring: rgba(22, 132, 97, 0.14);
+    --glass-border: rgba(255, 255, 255, 0.7);
+    --card-tag: rgba(0, 0, 0, 0.18);
+    --art-gradient: linear-gradient(160deg, #11685b, #87cdb5);
+    --halo-gradient: radial-gradient(circle, #c5e8da, #e7eee0 60%, transparent 72%);
+    --highlight-gradient: linear-gradient(135deg, #e0f0e9, #f1f3e8);
+    --project-gradient: linear-gradient(150deg, #123f39, #176457);
+    --project-alt-gradient: linear-gradient(150deg, #263f4b, #365a64);
+    --timeline-gradient: linear-gradient(#11685b, #87cdb5 60%, #d6e3dd);
+    --contact-glow: rgba(17, 104, 91, 0.48);
+    --contact-glow-soft: rgba(135, 205, 181, 0.12);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #101b19;
+    --surface: #182824;
+    --surface-soft: #1e322c;
+    --border: #355047;
+    --text: #e7f2ed;
+    --text-muted: #abc2b8;
+    --primary: #87d6b9;
+    --primary-hover: #abe9d0;
+    --primary-soft: #24483b;
+    --on-primary: #102b22;
+    --accent: #a7dbc4;
+    --status: #6ed4a6;
+    --header-bg: rgba(16, 27, 25, 0.96);
+    --hero-glow: rgba(63, 143, 111, 0.2);
+    --hero-glow-soft: rgba(53, 80, 71, 0.2);
+    --shadow-soft: rgba(0, 0, 0, 0.16);
+    --shadow-card: rgba(0, 0, 0, 0.28);
+    --shadow-art: rgba(0, 0, 0, 0.35);
+    --ring: rgba(135, 214, 185, 0.35);
+    --status-ring: rgba(110, 212, 166, 0.14);
+    --photo-border: #355047;
+    --art-gradient: linear-gradient(160deg, #176457, #355047);
+    --halo-gradient: radial-gradient(circle, #285342, #1e322c 60%, transparent 72%);
+    --highlight-gradient: linear-gradient(135deg, #203e31, #29382b);
+    --timeline-gradient: linear-gradient(#87d6b9, #355047 80%);
+    --contact-bg: #142d25;
+    --contact-glow: rgba(36, 113, 83, 0.3);
+    --contact-glow-soft: rgba(135, 205, 181, 0.08);
+}

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import ThemeToggle from "./ThemeToggle"
 
 const menuItems = [
     { title: "About", id: "about" },
@@ -61,7 +62,10 @@ const Header = () => {
                             </a>
                         ))}
                     </nav>
-                    <a href='mailto:manjodhs11@gmail.com' className='btn'>Hire Me</a>
+                    <div className="header-actions">
+                        <ThemeToggle />
+                        <a href='mailto:manjodhs11@gmail.com' className='btn'>Hire Me</a>
+                    </div>
                 </div>
             </div>
         </header>
