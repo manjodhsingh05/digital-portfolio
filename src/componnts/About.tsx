@@ -2,23 +2,27 @@ const About = () => {
     const sectors = [
         {
             id: 1,
-            name: 'Healthcare'
+            name: 'Enterprise SaaS'
         },
         {
             id: 2,
-            name: 'E-commerce'
+            name: 'Logistics'
         },
         {
             id: 3,
-            name: 'Enterprise'
+            name: 'Inventory & Retail'
         },
         {
             id: 4,
-            name: 'Pre-sales'
+            name: 'Dashboards'
         },
         {
             id: 5,
-            name: 'eLearning'
+            name: 'Design Systems'
+        },
+        {
+            id: 6,
+            name: 'Web Applications'
         },
     ]
     return (
@@ -26,11 +30,11 @@ const About = () => {
             <div className="container">
                 <div className="about">
                     <div>
-                        <h2>Design that people adopt, and teams can ship.</h2>
+                        <h2>Design that makes complex work feel simple.</h2>
                     </div>
                     <div className="txt">
-                        <p>I’m a senior designer who leads UX and UI strategy from research and problem definition through information architecture, flows, prototyping, usability validation and developer handoff.</p>
-                        <p>I build and scale design systems that keep products consistent and speed up delivery. I work closely with Product, Engineering, Business and Clinical stakeholders in Agile teams, present design rationale to leadership, and mentor junior designers.</p>
+                        <p>I’m a UI/UX and Product Designer based in Mohali, Punjab, with experience creating enterprise interfaces, responsive websites, and practical product workflows. I focus on clarity, consistency, and experiences that people can use with confidence.</p>
+                        <p>I work across discovery, user flows, wireframes, high-fidelity UI, prototypes, and developer handoff. My frontend knowledge helps me collaborate with engineers and make thoughtful design decisions that work in real products.</p>
                         <div className="sectors">
                             {sectors.map((item) => (
                                 <span className="chip" key={item.id}>{item.name}</span>

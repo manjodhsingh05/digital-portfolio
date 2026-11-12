@@ -3,18 +3,18 @@ const Education = () => {
     const edu = [
         {
             id: 1,
-            title: 'B.Com.',
-            info: 'Mumbai University, 2009'
+            title: 'Bachelor of Computer Applications (BCA)',
+            info: 'IEC University, 2018'
         },
         {
             id: 2,
-            title: 'UI/UX Design Certification',
-            info: 'Design Boat UI/UX Design School, 2020'
+            title: 'Professional focus',
+            info: 'UI/UX Design · Product Design · Web Design · Frontend Development'
         },
         {
             id: 3,
             title: 'Languages',
-            info: 'English, Hindi, Gujarati, Marathi'
+            info: 'Punjabi, English, Hindi'
         }
     ]
 

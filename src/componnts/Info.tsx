@@ -43,10 +43,10 @@ const Info = () => {
                 <div className="container">
                     <div className="info-parent">
                         <div className="info-side">
-                            <h6>Open to relocate: Bangalore, Pune, Hyderabad</h6>
-                            <h1>Keval Vora</h1>
-                            <h4>Senior UX/UI Designer · Product Design · Design Systems</h4>
-                            <p>I turn complex clinical, commercial and enterprise workflows into clear, accessible products across web, iOS and Android.</p>
+                            <h6>Open to opportunities · Mohali, India · Remote / Hybrid</h6>
+                            <h1>Manjodh Singh</h1>
+                            <h4>Senior UI/UX Designer · Product Designer · Web Designer</h4>
+                            <p>I turn complex business workflows into clear, intuitive digital experiences. With 8+ years in UI/UX and web design, I connect user needs, product goals, and frontend feasibility.</p>
                             <div className="action">
                                 <NavLink to='mailto:manjodhs11@gmail.com' className='btn'>See my work</NavLink>
                                 <NavLink to='mailto:manjodhs11@gmail.com' className='btn'>Get in touch</NavLink>
@@ -88,8 +88,8 @@ const Info = () => {
                                         className="fl-content"
                                         style={{ animationDelay: "-2s" }}
                                     >
-                                        <b>200+</b>
-                                        <h4>Screens Designed</h4>
+                                        <b>8+</b>
+                                        <h4>Years of Experience</h4>
                                     </div>
                                 </div>
                             </div>

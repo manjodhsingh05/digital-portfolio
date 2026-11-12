@@ -2,129 +2,65 @@ const Experience = () => {
     const job = [
         {
             id: 1,
-            time: 'Feb 2022 – Aug 2026',
-            company: 'Lead Designer',
-            project: '· IKS Health',
+            time: '2025 – Present',
+            company: 'Arethos Ventures',
+            project: '· UI/UX / Product Design',
             list: [
                 {
                     id: 1,
-                    text: 'Led UX/UI strategy for clinical and patient-facing healthcare products, turning complex clinical workflows into intuitive experiences with a short learning curve.'
-                },
-                {
-                    id: 2,
-                    text: 'Architected and governed a design system of 50+ components across 120+ screens, improving consistency and speeding up handoff and delivery.'
-                },
-                {
-                    id: 3,
-                    text: 'Partnered with Product Managers on vision, prioritization and solution definition, from discovery to release.'
-                },
-                {
-                    id: 4,
-                    text: 'Ran usability research and testing, using feedback and product metrics to drive evidence-based improvements.'
-                },
-                {
-                    id: 5,
-                    text: 'Worked with 10+ developers and clinical stakeholders in Agile/Scrum, and presented in 15+ leadership reviews.'
-                },
-                {
-                    id: 6,
-                    text: 'Used AI-assisted design and rapid prototyping across research, ideation and solution development.'
+                    text: 'Design enterprise application interfaces and operational workflows. Collaborate with developers and stakeholders on usability, consistency, and implementation-ready designs.'
                 }
             ]
         },
         {
             id: 2,
-            time: 'Feb 2022 – Aug 2026',
-            company: 'Lead Designer',
-            project: '· IKS Health',
+            time: '2023 – 2025',
+            company: 'Zero IT Solution',
+            project: '· UI/UX / Web Design',
             list: [
                 {
                     id: 1,
-                    text: 'Led UX/UI strategy for clinical and patient-facing healthcare products, turning complex clinical workflows into intuitive experiences with a short learning curve.'
-                },
-                {
-                    id: 2,
-                    text: 'Architected and governed a design system of 50+ components across 120+ screens, improving consistency and speeding up handoff and delivery.'
-                },
-                {
-                    id: 3,
-                    text: 'Partnered with Product Managers on vision, prioritization and solution definition, from discovery to release.'
-                },
-                {
-                    id: 4,
-                    text: 'Ran usability research and testing, using feedback and product metrics to drive evidence-based improvements.'
-                },
-                {
-                    id: 5,
-                    text: 'Worked with 10+ developers and clinical stakeholders in Agile/Scrum, and presented in 15+ leadership reviews.'
-                },
-                {
-                    id: 6,
-                    text: 'Used AI-assisted design and rapid prototyping across research, ideation and solution development.'
+                    text: 'Designed web interfaces and responsive experiences; translated requirements into visual layouts and reusable UI patterns.'
                 }
             ]
         },
         {
             id: 3,
-            time: 'Feb 2022 – Aug 2026',
-            company: 'Lead Designer',
-            project: '· IKS Health',
+            time: '2021 – 2023',
+            company: 'Fortec Web Solution',
+            project: '· Web / UI Design',
             list: [
                 {
                     id: 1,
-                    text: 'Led UX/UI strategy for clinical and patient-facing healthcare products, turning complex clinical workflows into intuitive experiences with a short learning curve.'
-                },
-                {
-                    id: 2,
-                    text: 'Architected and governed a design system of 50+ components across 120+ screens, improving consistency and speeding up handoff and delivery.'
-                },
-                {
-                    id: 3,
-                    text: 'Partnered with Product Managers on vision, prioritization and solution definition, from discovery to release.'
-                },
-                {
-                    id: 4,
-                    text: 'Ran usability research and testing, using feedback and product metrics to drive evidence-based improvements.'
-                },
-                {
-                    id: 5,
-                    text: 'Worked with 10+ developers and clinical stakeholders in Agile/Scrum, and presented in 15+ leadership reviews.'
-                },
-                {
-                    id: 6,
-                    text: 'Used AI-assisted design and rapid prototyping across research, ideation and solution development.'
+                    text: 'Worked on website layouts, interface improvements, and responsive design delivery.'
                 }
             ]
         },
         {
             id: 4,
-            time: 'Feb 2022 – Aug 2026',
-            company: 'Lead Designer',
-            project: '· IKS Health',
+            time: '2020 – 2021',
+            company: 'Crishion Solution',
+            project: '· Web Design',
             list: [
                 {
                     id: 1,
-                    text: 'Led UX/UI strategy for clinical and patient-facing healthcare products, turning complex clinical workflows into intuitive experiences with a short learning curve.'
+                    text: 'Created and refined website designs with attention to usability, presentation, and frontend handoff.'
+                }
+            ]
+        },
+        {
+            id: 5,
+            time: '2017 – 2020',
+            company: 'Baseline IT Development',
+            project: '· Web Design',
+            list: [
+                {
+                    id: 1,
+                    text: 'Built foundational experience designing websites, responsive layouts, and production-ready interfaces'
                 },
                 {
                     id: 2,
-                    text: 'Architected and governed a design system of 50+ components across 120+ screens, improving consistency and speeding up handoff and delivery.'
-                },
-                {
-                    id: 3,
-                    text: 'Partnered with Product Managers on vision, prioritization and solution definition, from discovery to release.'
-                },
-                {
-                    id: 4,
-                    text: 'Ran usability research and testing, using feedback and product metrics to drive evidence-based improvements.'
-                },
-                {
-                    id: 5,
-                    text: 'Worked with 10+ developers and clinical stakeholders in Agile/Scrum, and presented in 15+ leadership reviews.'
-                },
-                {
-                    id: 6,
-                    text: 'Used AI-assisted design and rapid prototyping across research, ideation and solution development.'
+                    text: 'Please verify job titles and month-level dates against your latest CV before posting; only company/year history is currently used.'
                 }
             ]
         }

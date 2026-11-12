@@ -578,6 +578,8 @@ h2 {
         color: #c9cbe6;
         margin-bottom: 30px;
         font-size: 17px;
+        width: 60ch;
+        margin-inline: auto;
     }
     .cta {
         display: flex;
@@ -601,4 +603,8 @@ h2 {
             color: #1a1c3a;
         }
     }
+}
+.footer {
+    text-align: center;
+    padding: 12px;
 }

@@ -2,23 +2,23 @@ const Stats = () => {
     const statsData = [
         {
             id: 1,
-            number: "15+",
-            text: "years in design, 8+ in UX/UI"
+            number: "8+",
+            text: "Years in UI/UX & web design"
         },
         {
             id: 2,
-            number: "25+",
-            text: "UX audits and usability studies"
+            number: "5",
+            text: "Companies across my career"
         },
         {
             id: 3,
-            number: "30+",
-            text: "stakeholder presentations"
+            number: "3",
+            text: "Core disciplines: UX, product & web"
         },
         {
             id: 4,
-            number: "8+",
-            text: "product releases with PMs"
+            number: "1",
+            text: "Design-to-development mindset"
         }
     ]
     return(

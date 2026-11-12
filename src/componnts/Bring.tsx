@@ -7,43 +7,31 @@ const Bring = () => {
             list: [
                 {
                     id: 1,
-                    item: 'UX strategy'
-                },
-                {
-                    id: 2,
-                    item: 'User research'
-                },
-                {
-                    id: 3,
-                    item: 'Information architecture'
-                },
-                {
-                    id: 4,
                     item: 'User flows'
                 },
                 {
-                    id: 5,
+                    id: 2,
+                    item: 'Information architecture'
+                },
+                {
+                    id: 3,
                     item: 'Wireframing'
                 },
                 {
-                    id: 6,
+                    id: 4,
                     item: 'Prototyping'
                 },
                 {
-                    id: 7,
+                    id: 5,
                     item: 'Interaction design'
                 },
                 {
-                    id: 8,
-                    item: 'UI design'
-                },
-                {
-                    id: 9,
-                    item: 'Usability testing'
-                },
-                {
-                    id: 10,
+                    id: 6,
                     item: 'UX audits'
+                },
+                {
+                    id: 7,
+                    item: 'Usability-focused iteration'
                 }
             ]
         },
@@ -53,19 +41,19 @@ const Bring = () => {
             list: [
                 {
                     id: 1,
-                    item: 'Design systems'
+                    item: 'Requirement clarification'
                 },
                 {
                     id: 2,
-                    item: 'Component libraries'
+                    item: 'Design reviews'
                 },
                 {
                     id: 3,
-                    item: 'Design governance'
+                    item: 'Component consistency'
                 },
                 {
                     id: 4,
-                    item: 'Mentoring'
+                    item: 'Developer handoff'
                 },
                 {
                     id: 5,
@@ -73,7 +61,7 @@ const Bring = () => {
                 },
                 {
                     id: 6,
-                    item: 'Design thinking'
+                    item: 'Cross-functional teamwork'
                 }
             ]
         },
@@ -83,23 +71,27 @@ const Bring = () => {
             list: [
                 {
                     id: 1,
-                    item: 'Product discovery'
+                    item: 'Workflow simplification'
                 },
                 {
                     id: 2,
-                    item: 'Customer journey mapping'
+                    item: 'Dashboard UX'
                 },
                 {
                     id: 3,
-                    item: 'Data-informed design'
+                    item: 'Operational tools'
                 },
                 {
                     id: 4,
-                    item: 'Conversion optimization'
+                    item: 'Customer journeys'
                 },
                 {
                     id: 5,
-                    item: 'User adoption'
+                    item: 'Product discovery'
+                },
+                {
+                    id: 6,
+                    item: 'Business-rule mapping'
                 }
             ]
         },
@@ -113,31 +105,35 @@ const Bring = () => {
                 },
                 {
                     id: 2,
-                    item: 'Adobe XD'
+                    item: 'FigJam '
                 },
                 {
                     id: 3,
-                    item: 'Miro'
+                    item: 'Adobe XD'
                 },
                 {
                     id: 4,
-                    item: 'Jira'
+                    item: 'HTML'
                 },
                 {
                     id: 5,
-                    item: 'Design tokens'
+                    item: 'CSS/SCSS'
                 },
                 {
                     id: 6,
-                    item: 'Dev Mode'
+                    item: 'React'
                 },
                 {
                     id: 7,
-                    item: 'Agile / Scrum'
+                    item: 'Next.js'
                 },
                 {
                     id: 8,
-                    item: 'WCAG 2.2'
+                    item: 'Angular'
+                },
+                {
+                    id: 9,
+                    item: 'Tailwind CSS'
                 }
             ]
         },
@@ -164,15 +160,23 @@ const Bring = () => {
                 },
                 {
                     id: 5,
-                    item: 'Lovable'
+                    item: 'Google Stitch'
                 },
                 {
                     id: 6,
-                    item: 'Perplexity'
+                    item: ' UX Magic'
                 },
                 {
                     id: 7,
-                    item: 'Rapid prototyping'
+                    item: 'Uxcel / Useberry'
+                },
+                {
+                    id: 8,
+                    item: 'Recraft'
+                },
+                {
+                    id: 9,
+                    item: 'Design Arena'
                 }
             ]
         }
