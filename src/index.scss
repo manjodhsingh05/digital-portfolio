@@ -1,2 +1,5 @@
 @use './style/comon';
 @use './style/fonts';
+html {
+    scroll-behavior: smooth;
+}
