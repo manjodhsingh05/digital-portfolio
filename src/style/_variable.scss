@@ -1,0 +1,31 @@
+@use "sass:map";
+
+$light-theme: (
+    "primary-border":#508991,
+    "primary":#09bc8a,
+    "primary-text":#004346,
+    "manu-bg": #0043462a
+);
+$dark-theme: (
+    "primary-border": #508991,
+    "primary": #09BC8A,
+    "primary-text": #75DDDD,
+    "manu-bg": #172A3A,
+);
+
+@mixin generate-theme($theme) {
+  @each $name, $value in $theme {
+    --color-#{$name}: #{$value};
+  }
+}
+
+:root,
+[data-theme="light"] {
+  @include generate-theme($light-theme);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  @include generate-theme($dark-theme);
+  color-scheme: dark;
+}
