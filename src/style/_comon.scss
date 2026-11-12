@@ -1,3 +1,6 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 88px; }
 body {
     margin: 0;
 }
@@ -27,6 +30,11 @@ body {
     }
 }
 header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(12px);
     border-block-end: 1px solid #508991;
 }
 .inner-header {
@@ -73,6 +81,7 @@ header {
             &:hover {
                 background-color: #0043462a;
             }
+            &.active { background-color: #004346; color: #fff; }
         }
     }
     .btn {
@@ -114,7 +123,7 @@ header {
                 height: 8px;
                 border-radius: 50%;
                 background: #12b886;
-                box-shadow: 0 0 0 4px rgba #12b8862e (18, 184, 134, 0.18);
+                box-shadow: 0 0 0 4px rgba(18, 184, 134, 0.18);
             }
         }
         h1 {
@@ -471,7 +480,7 @@ h2 {
                 margin-bottom: 7px;
                 color: #5d6080;
                 font-size: 17px;
-                &:marker {
+                &::marker {
                     color: #4f46e5;
                 }
             }
@@ -578,7 +587,8 @@ h2 {
         color: #c9cbe6;
         margin-bottom: 30px;
         font-size: 17px;
-        width: 60ch;
+        width: 100%;
+        max-width: 60ch;
         margin-inline: auto;
     }
     .cta {
@@ -607,4 +617,108 @@ h2 {
 .footer {
     text-align: center;
     padding: 12px;
+}
+
+a:focus-visible { outline: 3px solid #4f46e5; outline-offset: 4px; }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #e4e6f5;
+        border-radius: 50%;
+        color: #004346;
+        transition: background-color 0.2s, color 0.2s;
+        &:hover { background: #004346; color: #fff; }
+        svg { width: 24px; height: 24px; fill: currentColor; }
+    }
+}
+
+@media (max-width: 1024px) {
+    .inner-header .menu { display: none; }
+    .info-main {
+        padding: 48px 0 72px;
+        .info-parent {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 24px;
+            h1 { font-size: clamp(44px, 8vw, 72px); }
+            .scene { margin-inline: auto; }
+        }
+    }
+    .about-main {
+        padding-block: 64px;
+        .about { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+    }
+    .education .edu { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .bring, .experience, .project, .education { padding-bottom: 64px; }
+}
+
+@media (max-width: 767px) {
+    .info-main .info-parent {
+        h6 { font-size: 12px; border-radius: 16px; }
+        h6::before { flex-shrink: 0; }
+        h1 { font-size: clamp(40px, 10vw, 60px); line-height: 1.1; }
+        .action { flex-wrap: wrap; }
+    }
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .bring .skills, .project .proj, .education .edu {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+        margin-top: 24px;
+    }
+    .bring .skills .sk, .education .edu .ed { padding: 22px; }
+    .project .proj .pc { padding: 26px; min-height: 0; }
+    .experience .tl { margin-top: 28px; padding-left: 28px; }
+    .experience .tl .job {
+        padding-bottom: 28px;
+        &::before { left: -28px; }
+        h3 { font-size: 22px; }
+        ul { padding-left: 20px; }
+    }
+    .contact {
+        padding: 40px 24px;
+        border-radius: 24px;
+        margin-bottom: 32px;
+        h2 { font-size: clamp(28px, 7vw, 42px); }
+        .btn { max-width: 100%; overflow-wrap: anywhere; justify-content: center; }
+    }
+}
+
+@media (max-width: 575px) {
+    .info-main .info-parent {
+        // Keep the artwork and floating labels inside narrow viewports.
+        .scene { max-width: 320px; height: 370px; perspective: none; }
+        .scene .stage {
+            transform: none;
+            .photo { width: 220px; height: 290px; margin: -145px 0 0 -110px; }
+            .halo, .ring { width: 280px; height: 280px; margin: -140px 0 0 -140px; }
+            .fl {
+                right: 0 !important;
+                padding: 10px 12px;
+                max-width: 160px;
+                b { font-size: 22px; }
+                h4 { font-size: 14px; }
+            }
+            .fl:last-child { left: 0 !important; right: auto !important; }
+            .cube { width: 48px; height: 48px; }
+        }
+        .action a { padding: 12px 20px; }
+    }
+    .stats .stat { padding: 16px; b { font-size: 30px; } }
+    .about-main { padding-block: 48px; }
+    .bring, .experience, .project, .education { padding-bottom: 48px; }
+    .contact .cta { flex-direction: column; align-items: stretch; }
+    .footer { font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .info-main .info-parent .scene,
+    .info-main .info-parent .scene .stage * { animation: none; transition: none; }
 }

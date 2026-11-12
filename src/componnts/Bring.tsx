@@ -212,7 +212,7 @@ const Bring = () => {
         card.style.setProperty("--ry", "0deg");
     };
     return (
-        <section className="bring">
+        <section id="skills" className="bring">
             <div className="container">
                 <h2>What I bring</h2>
                 <p className="lead">Strategy, craft and delivery, plus AI tools that make exploration faster.</p>

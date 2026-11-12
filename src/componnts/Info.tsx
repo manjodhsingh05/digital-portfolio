@@ -38,7 +38,7 @@ const Info = () => {
         card.style.setProperty("--ry", "0deg");
     };
     return (
-        <section>
+        <section id="home">
             <div className="info-main">
                 <div className="container">
                     <div className="info-parent">

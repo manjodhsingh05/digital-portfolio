@@ -1,51 +1,67 @@
-import { NavLink } from "react-router-dom"
+import { useEffect, useRef, useState } from "react"
+
+const menuItems = [
+    { title: "About", id: "about" },
+    { title: "Skills", id: "skills" },
+    { title: "Experience", id: "experience" },
+    { title: "Projects", id: "projects" },
+    { title: "Contact", id: "contact" },
+]
 
 const Header = () => {
-    const menuItems = [
-        {
-            id: 1,
-            title: "About",
-            path: "/about"
-        },
-        {
-            id: 2,
-            title: "Skills",
-            path: "/skills"
-        },
-        {
-            id: 3,
-            title: "Experience",
-            path: "/experience"
-        },
-        {
-            id: 4,
-            title: "Projects",
-            path: "/projects"
-        },
-        {
-            id: 5,
-            title: "Contact",
-            path: "/contact"
+    const headerRef = useRef<HTMLElement>(null)
+    const [activeSection, setActiveSection] = useState("")
+
+    useEffect(() => {
+        let frame = 0
+        const updateActiveSection = () => {
+            frame = 0
+            // Include the 88px section scroll margin so clicked anchors become active.
+            const offset = Math.max(88, (headerRef.current?.getBoundingClientRect().height ?? 0) + 24) + 1
+            let current = ""
+            for (const item of menuItems) {
+                const section = document.getElementById(item.id)
+                if (section && section.getBoundingClientRect().top <= offset) current = item.id
+            }
+            // The last section may be too short to reach the header.
+            if (window.scrollY > 0 && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+                current = "contact"
+            }
+            setActiveSection(current)
         }
-    ]
+        const scheduleUpdate = () => {
+            if (!frame) frame = window.requestAnimationFrame(updateActiveSection)
+        }
+        const observer = new ResizeObserver(scheduleUpdate)
+        observer.observe(document.body)
+        updateActiveSection()
+        window.addEventListener("scroll", scheduleUpdate, { passive: true })
+        window.addEventListener("resize", scheduleUpdate)
+        return () => {
+            window.cancelAnimationFrame(frame)
+            observer.disconnect()
+            window.removeEventListener("scroll", scheduleUpdate)
+            window.removeEventListener("resize", scheduleUpdate)
+        }
+    }, [])
     return (
-        <header>
+        <header ref={headerRef}>
             <div className="container">
                 <div className="inner-header">
-                    <NavLink to="/" className="logo">
+                    <a href="#home" className="logo" aria-label="Manjodh Singh, back to top">
                         <span>MS</span>
                         {/* Manjodh S. */}
-                    </NavLink>
-                    <menu className="menu">
+                    </a>
+                    <nav className="menu" aria-label="Main navigation">
                         {menuItems.map((item) => (
-                            <li key={item.id}>
-                                <NavLink to={item.path}>
-                                    {item.title}
-                                </NavLink>
-                            </li>
+                            <a key={item.id} href={`#${item.id}`}
+                                className={activeSection === item.id ? "active" : undefined}
+                                aria-current={activeSection === item.id ? "location" : undefined}>
+                                {item.title}
+                            </a>
                         ))}
-                    </menu>
-                    <NavLink to='mailto:manjodhs11@gmail.com' className='btn'>Hire Me</NavLink>
+                    </nav>
+                    <a href='mailto:manjodhs11@gmail.com' className='btn'>Hire Me</a>
                 </div>
             </div>
         </header>

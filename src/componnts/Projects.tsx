@@ -81,7 +81,7 @@ const Projects = () => {
         card.style.setProperty("--ry", "0deg");
     };
     return (
-        <section className="project">
+        <section id="projects" className="project">
             <div className="container">
                 <h2>Selected projects</h2>
                 <p className="lead">Recent AI-enabled healthcare products, designed and led end to end.</p>
