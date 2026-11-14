@@ -26,7 +26,7 @@ const Contact = () => {
                         </svg>
                     </Link>
                 </nav>
-                <p>© 2026 Manjodh Singh. Designed with purpose.</p>
+                <p>© 2026 Manjodh Singh</p>
             </footer>
         </section>
     )
