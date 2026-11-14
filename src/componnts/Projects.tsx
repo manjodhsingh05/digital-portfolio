@@ -4,52 +4,117 @@ const Projects = () => {
     const Project = [
         {
             id: 1,
-            subtitle: 'Healthcare · Clinical documentation',
-            title: 'Team Based Charting',
-            text: 'Lets MAs, NPs, clinicians and AI build patient notes together, with clear ownership and an audit trail. It reduces effort while the clinician stays the final authority.',
+            subtitle: 'ALS Dispatch',
+            title: 'Transportation Management & Dispatch System',
+            text: 'Designed user-friendly interfaces for a logistics and dispatch management platform, simplifying complex transportation workflows.',
             list: [
                 {
                     id: 1,
-                    title: 'Project lead'
+                    title: 'Active Load Management Dashboard'
                 },
                 {
                     id: 2,
-                    title: '8 weeks'
+                    title: 'Create Job & Update Job Workflows'
                 },
                 {
                     id: 3,
-                    title: 'Team of 4'
+                    title: 'Automated Job Creation'
                 },
                 {
                     id: 4,
-                    title: 'Desktop + mobile'
+                    title: 'Interactive Popups and Data Tables'
                 },
+                {
+                    id: 4,
+                    title: 'Responsive UI and Workflow Optimization'
+                }
             ],
         },
         {
             id: 2,
-            subtitle: 'Healthcare · Clinical documentation',
-            title: 'Team Based Charting',
-            text: 'Lets MAs, NPs, clinicians and AI build patient notes together, with clear ownership and an audit trail. It reduces effort while the clinician stays the final authority.',
+            subtitle: 'ALS Smart Track',
+            title: 'Real-Time Fleet Tracking & Monitoring Platform',
+            text: 'Worked on designing an intuitive fleet tracking experience to help transportation businesses monitor vehicles and manage operational information efficiently.',
             list: [
                 {
                     id: 1,
-                    title: 'Project lead'
+                    title: 'Fleet Monitoring Dashboard'
                 },
                 {
                     id: 2,
-                    title: '8 weeks'
+                    title: 'Vehicle Tracking Interfaces'
                 },
                 {
                     id: 3,
-                    title: 'Team of 4'
+                    title: 'Data Visualization'
                 },
                 {
                     id: 4,
-                    title: 'Desktop + mobile'
+                    title: 'User-Friendly Navigation'
                 },
+                {
+                    id: 5,
+                    title: 'Responsive Interface Design'
+                }
             ],
             className: 'a'
+        },
+        {
+            id: 3,
+            subtitle: 'ALS ELD',
+            title: 'Electronic Logging Device & Driver Compliance Platform',
+            text: 'Designed interfaces for an electronic logging solution focused on making driver activity and compliance-related information easier to understand and manage.',
+            list: [
+                {
+                    id: 1,
+                    title: 'Driver Hours of Service (HOS)'
+                },
+                {
+                    id: 2,
+                    title: 'Electronic Log Management'
+                },
+                {
+                    id: 3,
+                    title: 'Driver Activity Dashboard'
+                },
+                {
+                    id: 4,
+                    title: 'Compliance Information Display'
+                },
+                {
+                    id: 5,
+                    title: 'Clear Data Tables and User Workflows'
+                }
+            ],
+            className: 'a'
+        },
+        {
+            id: 4,
+            subtitle: 'ALS Truck Repair Shop',
+            title: 'Truck Maintenance & Repair Management System',
+            text: 'Worked on interface design for a truck repair management platform, focusing on simplifying repair workflows and improving information accessibility.',
+            list: [
+                {
+                    id: 1,
+                    title: 'Repair Job Management'
+                },
+                {
+                    id: 2,
+                    title: 'Service & Maintenance Records'
+                },
+                {
+                    id: 3,
+                    title: 'Vehicle Information Management'
+                },
+                {
+                    id: 4,
+                    title: 'Repair Status Tracking'
+                },
+                {
+                    id: 4,
+                    title: 'Dashboard and Form Design'
+                }
+            ],
         }
     ]
 
