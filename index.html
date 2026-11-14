@@ -1,24 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <script>
-      // Apply the theme before the first paint to avoid a light-mode flash.
-      (() => {
-        let theme;
-        try { theme = localStorage.getItem('portfolio-theme'); } catch {}
-        if (theme !== 'light' && theme !== 'dark') {
-          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
-        document.documentElement.dataset.theme = theme;
-      })();
-    </script>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>digital-portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    // Apply the theme before the first paint to avoid a light-mode flash.
+    (() => {
+      let theme;
+      try { theme = localStorage.getItem('portfolio-theme'); } catch { }
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manjodh Singh | Senior UI/UX & Product Designer</title>
+  <meta name="description"
+    content="Explore the portfolio of Manjodh Singh, a Senior UI/UX and Product Designer with 8+ years of experience creating intuitive digital products, web applications, and user-centered experiences." />
+  <meta name="author" content="Manjodh Singh" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://manjodhsingh05.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Manjodh Singh | Senior UI/UX & Product Designer" />
+  <meta property="og:description"
+    content="Designing thoughtful digital experiences. Explore my UI/UX, product design, and web design portfolio." />
+  <meta property="og:url" content="https://manjodhsingh05.github.io/" />
+  <meta property="og:image" content="/src/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Manjodh Singh - Senior UI/UX and Product Designer Portfolio" />
+  <meta property="og:site_name" content="Manjodh Singh Portfolio" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Manjodh Singh | Senior UI/UX & Product Designer" />
+  <meta name="twitter:description"
+    content="Senior UI/UX & Product Designer specializing in intuitive digital products and modern web experiences." />
+  <meta name="twitter:image" content="/src/assets/img/og-image.png" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
